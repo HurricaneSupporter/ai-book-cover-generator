@@ -1,0 +1,1 @@
+"""Handlers: GUI shell and headless CLI render."""
