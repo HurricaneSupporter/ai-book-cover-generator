@@ -1,0 +1,30 @@
+# Default covergen configuration. Copy to config/local.yaml to override.
+output_dir: outputs
+cache_dir: .covers-cache
+log_level: INFO
+
+backend:
+  name: mock            # mock | sd_local | sdxl_local | onnx_local | remote
+  model_path: null
+  endpoint: null
+  api_key_env: COVERGEN_API_KEY
+  steps: 28
+  guidance: 7.0
+  width: 1024
+  height: 1536
+  allow_remote_fetch: false
+
+layout:
+  title_font: Cinzel-Bold.ttf
+  author_font: EBGaramond-Regular.ttf
+  title_pt: 96
+  author_pt: 48
+  margin_pct: 0.08
+  spine_safe_pct: 0.04
+  title_color: "#F5EFE0"
+  author_color: "#E8DCC0"
+
+prompt:
+  genre: fantasy
+  preset_dir: covergen/models/presets
+  negative: "text, watermark, signature, blurry, lowres, deformed hands"
