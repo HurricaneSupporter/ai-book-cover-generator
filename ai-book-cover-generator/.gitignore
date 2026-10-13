@@ -1,0 +1,55 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+env.bak/
+
+# Model + generation caches (local only, never commit)
+.cache/
+.covers-cache/
+.models/
+outputs/
+renders/
+*.safetensors
+*.ckpt
+*.pt
+*.onnx
+*.gguf
+
+# API keys and secrets
+secrets.toml
+config/local.yaml
+*.key
+*.pem
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
